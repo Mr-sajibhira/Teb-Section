@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teb Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+       *{
+        font-family: "Poppins", sans-serif;  
+        margin: 0;
+        padding: 0;
+        }
+    </style>
+
+<style>
+section{
+padding: 50px 0px;
+    }
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+}
+.tab_main_div{
+    max-width: 850px;
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.tab_header{
+    display: flex;
+}
+.tab_main_div .tab_header .list_div{
+    width: 100%;
+    box-sizing: border-box;
+}
+  
+.tab_header h5 {
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 600;
+    color: #ffffff;
+    width: 100%;
+    background-color: #009e7d;
+    padding: 12px 30px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab_header h5:hover, .tab_header .active{
+    background-color:#b49459; 
+}
+.tab_main_div .tab_body{
+ padding: 50px 0px 0px 0px;
+}
+
+.tab_body .tab_box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab_body .tab_box .col{
+  max-width: 25%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: -10px 0px;
+}
+
+ .tab_body .tab_box .col_img{
+  max-width: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.tab_body .tab_box .col_img img {
+    display: block;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.tab_body .tab_box .col .img_box img{
+  max-width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  width: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+
+}
+.tab_body .text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0px 0px 20px;
+}
+
+.tab_body .text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.tab_body  .img_box{
+padding:10px 0px;
+}
+.tab_body  .img_box img{
+    margin: 0px auto 10px;
+}
+.tab_body  .img_box p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0px;
+    
+}
+
+
+@media(max-width:767px){
+    section {
+    padding: 80px 20px;
+   } 
+   .tab_main_div .tab_header{
+    flex-wrap: wrap;
+    margin: -3px;
+   }
+   .tab_main_div .tab_header .list_div{
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 3px;
+   }
+   .tab_header h5 {
+    font-size: 14px;
+    line-height: 120%;
+    padding: 15px 30px;
+   }
+   .tab_main_div .tab_body {
+    padding: 25px 0px 0px 0px;
+}
+.tab_main_div {
+    max-width: 100%;
+}
+.tab_body .tab_box .col {
+    max-width: 100%;
+    padding: 10px;
+    margin: -10px;
+    display: flex;
+}
+
+.tab_body  .img_box {
+    padding: 10px;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+.tab_body .tab_box .col_img {
+    max-width: 100%;
+}
+.tab_body .tab_box {
+    max-width: 90%;
+    width: 100%;
+    margin: -10px auto;
+}
+
+}
+</style>
+
+<section>
+    <div class="container">
+        <div class="tab_main_div">
+           <div class="tab_header">
+                <div class="list_div">
+                  <h5 class="tabtop" onclick="openPage('Abide', this )" id="defaultOpen">Abide</h5>
+               </div>
+               <div class="list_div">
+                <h5 class="tabtop" onclick="openPage('Town', this)">London Town</h5>
+                </div>
+                <div class="list_div">
+                <h5 class="tabtop" onclick="openPage('Owl', this)">Space Owl</h5>
+                </div>
+                <div class="list_div">
+                <h5 class="tabtop" onclick="openPage('Garden', this)">Cheetah's Garden</h5>  
+                </div>
+           </div>
+         
+
+           <div class="tab_body tabcontent" id="Abide">
+                <p class="text">Smoky, yet bright, reposado-style with inviting aromas, unique flavors, and a delightfully tingling finish, or as we like to call it: a clean burn. </p>
+
+                <div class="tab_box">
+                    <div class="col">
+                        <div class="img_box">
+                            <img src="Image/image-1.png" alt="image-1">
+                            <p>Soaring Owls</p>
+                        </div>
+
+                        <div class="img_box">
+                            <img src="Image/image-2.png" alt="image-2">
+                            <p>Soaring Owls</p>
+                        </div>
+
+                    </div>
+                    <div class="col_img">
+                        <img src="Image/image.png" alt="image">
+                    </div>
+
+                    <div class="col">
+                        <div class="img_box">
+                            <img src="Image/image-3.png" alt="image-3">
+                            <p>Soaring Owls</p>
+                        </div>
+
+                        <div class="img_box">
+                            <img src="Image/image-4.png" alt="image-4">
+                            <p>Soaring Owls</p>
+                        </div>
+
+                    </div>
+                </div>
+               
+           </div>
+
+           <div class="tab_body tabcontent" id="Town">
+            <p class="text">Elevate your interior design with the versatility and charm that patterns bring to your home.</p>
+
+            <div class="tab_box">
+                <div class="col">
+                    <div class="img_box">
+                        <img src="Image/image2-1.png" alt="image2-1">
+                        <p>Soaring Owls</p>
+                    </div>
+
+                    <div class="img_box">
+                        <img src="Image/image2-2.jpg" alt="image2-2">
+                        <p>Soaring Owls</p>
+                    </div>
+
+                </div>
+                <div class="col_img">
+                    <img src="Image/image2.png" alt="image2">
+                </div>
+
+                <div class="col">
+                    <div class="img_box">
+                        <img src="Image/image2-3.png" alt="image2-3">
+                        <p>Soaring Owls</p>
+                    </div>
+
+                    <div class="img_box">
+                        <img src="Image/image2-4.jpg" alt="image2-4">
+                        <p>Soaring Owls</p>
+                    </div>
+
+                </div>
+            </div>
+           
+       </div>
+
+
+       <div class="tab_body tabcontent" id="Owl">
+        <p class="text">Smoky, yet bright, reposado-style with inviting aromas, unique flavors, and a delightfully tingling finish, or as we like to call it: a clean burn.</p>
+
+        <div class="tab_box">
+            <div class="col">
+                <div class="img_box">
+                    <img src="Image/image3-1.png" alt="image3-1">
+                    <p>Soaring Owls</p>
+                </div>
+
+                <div class="img_box">
+                    <img src="Image/image3-2.png" alt="image3-2">
+                    <p>Soaring Owls</p>
+                </div>
+
+            </div>
+            <div class="col_img">
+                <img src="Image/image3.png" alt="image3">
+            </div>
+
+            <div class="col">
+                <div class="img_box">
+                    <img src="Image/image3-3.jpg" alt="image3-3">
+                    <p>Soaring Owls</p>
+                </div>
+
+                <div class="img_box">
+                    <img src="Image/image3-4.png" alt="image3-4">
+                    <p>Soaring Owls</p>
+                </div>
+
+            </div>
+        </div>
+       
+   </div>
+
+
+   <div class="tab_body tabcontent" id="Garden">
+    <p class="text"> Harness Your Creative Potential with Hygge & West Wallpaper </p>
+
+    <div class="tab_box">
+        <div class="col">
+            <div class="img_box">
+                <img src="Image/image4-1.png" alt="image4-1">
+                <p>Soaring Owls</p>
+            </div>
+
+            <div class="img_box">
+                <img src="Image/image4-2.png" alt="image4-2">
+                <p>Soaring Owls</p>
+            </div>
+
+        </div>
+        <div class="col_img">
+            <img src="Image/image4.png" alt="image4">
+        </div>
+
+        <div class="col">
+            <div class="img_box">
+                <img src="Image/image4-3.png" alt="image4-3">
+                <p>Soaring Owls</p>
+            </div>
+
+            <div class="img_box">
+                <img src="Image/image4-4.png" alt="image4-4">
+                <p>Soaring Owls</p>
+            </div>
+
+        </div>
+    </div>
+   
+</div>
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+<script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tabtop");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.classList.add("active");
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+
+    
+</body>
+</html>
